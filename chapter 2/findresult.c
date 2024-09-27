@@ -7,5 +7,5 @@ int a,b,c;
 printf("Enter any number:\t");
 scanf("%d %d %d",&a,&b,&c);
 
-printf("your num is %d",a+b*c);
+printf("your num is %d",a+b+c);
 }
