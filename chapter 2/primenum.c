@@ -1,16 +1,24 @@
 //Write a function to check if a number is prime and call it from main().
 #include<stdio.h>
-int prime();
-int num ();
-scanf("%d",&num);
+#include<stdbool.h>
 
-
-int prime(){
-    if(num%1=num && num%num=0){
-        printf
+bool isprime(int num){
+    for(int i=2;i*i<=num;i++){
+        if(num%i==0){
+            return false;
+        }
+       
     }
+     return true;
 }
-#define rajan main
-    void rajan(){
-
+int main(){
+    int num;
+    printf("Enter a number\t.");
+    scanf("%d",&num);
+bool value = isprime(num);
+if(value){
+    printf("%d is prime",num);
+}else{
+ printf("%d is not prime",num);
+}
 }
