@@ -12,7 +12,7 @@ int semester=2;
 char *CourceName[]= {"Fundamentals of Mechanical Engineering & Mechatronics","Emerging Domain in Electronics Engineering","Engineering Chemistry","Engineering Mathematics-II","Environmental Science","Ertificial Intelligence for Engineers"};
 int max=100;
 int marks[]={95,59,84,66,31,38};
-float persentage;
+float percentage;
 float sum=0;
 printf("University:%s             ",University);
 printf(" Name: %s       \n",Name);
@@ -26,10 +26,10 @@ int length=sizeof (marks) / sizeof (marks[0]);
 for(int i=0 ; i<length;i++){
     printf("%s %d\n",CourceName[i],marks[i]);
 sum += marks[i];
-persentage = (sum/500)*100;
+percentage = (sum/500)*100;
 }
 
-printf("persentage: %.2f\n",persentage);
+printf("percentage: %.2f\n",percentage);
 
 }
 
