@@ -20,6 +20,8 @@ int main() {
     if(index<0||index>arraylength){
         printf("You reach maximum \"Thank you\"");
     }else{
+        word=a[index];
+        printf(" your deleted word: %c\n",a[index]);
         for(i=index;i<arraylength-1;i++){
             a[i]=a[i+1];
         }
