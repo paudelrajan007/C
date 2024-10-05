@@ -20,7 +20,7 @@ void main() {
     scanf("%d", &index);
 
     // Step 4: Validate index
-    if(index > 0 || index < elements_lengths) {
+    if(index < 0 || index > elements_lengths) {
         printf("Invalid index! You reached your maximum limit. Thank you.\n");
     } else {
         // Step 5: Shift elements to the right to make space for new element
