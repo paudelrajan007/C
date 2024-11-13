@@ -12,9 +12,11 @@ void main(){
         }else{
         printf("Enter sentence :\t");
         scanf(" ");
+    
     for(i=0;i<length;i++){
         scanf("%c",&sentence[i]);
         sentence[length] = '\0'; // Null terminate the string
+    
 
     }for(i=length-1;i>=0;i--){
         printf("%c",sentence[i]);
