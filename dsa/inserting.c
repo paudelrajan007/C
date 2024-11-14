@@ -1,5 +1,5 @@
 #include<stdio.h>
-void display(int array[] ,int array_length);
+void display(int array[],int array_length);
 void display(int array[],int array_length){
     for(int i=0;i<array_length;i++){
         printf("%d\n",array[i]);
