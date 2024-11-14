@@ -29,5 +29,5 @@ switch(operator){
         default:
             printf("Invalid operator \"thank you !\"\n");
             break;
-}
+}  
     } 
