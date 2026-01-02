@@ -1,15 +1,50 @@
 #include<stdio.h>
-void (int array[][],int array_length){
-    for(int i=0;i<2;i++){
-        for(int j=0;j<3;j++){
-
+void Display(int rows,int column, int matrix1[rows][column],int matrix2[rows][column],int result_matrix[rows][column]){
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<column;j++){
+            result_matrix[i][j]=matrix1[i][j]+matrix2[i][j];
         }
     }
 }
-void ()
- void main(){
-    int array[2][3]={{1,2,3},{4,5,6}};
-    int array2[2][3]={{7,8,9},{10,11,12}};
-    
-int array_length=6;
+void printmatrix(int rows,int column,int matrix[rows][column]){
+       for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < column; j++) {
+            printf("%d\t ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+int main(){
+    int rows,column;
+     printf("Enter the number of rows and columns of the matrices: ");
+    scanf("%d %d", &rows, &column);
+       
+
+    int matrix1[rows][column], matrix2[rows][column], result[rows][column];
+
+    // Input first matrix
+    printf("Enter elements of the first matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < column; j++) {
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+
+    // Input second matrix
+    printf("Enter elements of the second matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < column; j++) {
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+
+    // Add the matrices
+    Display(rows, column, matrix1, matrix2, result_matrix
+    );
+
+    // Print the result
+    printf("Resultant matrix after addition:\n");
+    printmatrix(rows, column, result_matrix);
+
+    return 0;
 }
